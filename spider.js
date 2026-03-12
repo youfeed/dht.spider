@@ -19,18 +19,20 @@ class DHTSpider {
         this.routingTable = new Map();
         this.nodeQueue = [];
 
-        // 引导节点 - 使用 IP 地址避免 DNS 解析问题
-        this.bootstrapNodes = [
-            // 已验证可用的节点（直接使用IP，避免DNS解析延迟和错误）
-            { ip: '87.98.162.88', port: 6881 },    // dht.transmissionbt.com - 已验证可用
-            { ip: '82.221.103.244', port: 6881 },  // router.utorrent.com
-            { ip: '185.157.221.247', port: 6881 }, // dht.libtorrent.org
-            { ip: '67.215.246.10', port: 6881 },   // router.bittorrent.com
+    // 引导节点 - 使用域名作为主，IP 作为备用
+    this.bootstrapNodes = [
+      // 域名（主）
+      { ip: 'router.bittorrent.com', port: 6881 },
+      { ip: 'dht.transmissionbt.com', port: 6881 },
+      { ip: 'router.utorrent.com', port: 6881 },
+      { ip: 'dht.libtorrent.org', port: 6881 },
 
-            // 国内节点（如果可用）
-            { ip: '120.78.162.251', port: 6881 },
-            { ip: '182.92.170.134', port: 6881 }
-        ];
+      // IP（备用 - DNS 解析失败时使用）
+      { ip: '67.215.246.10', port: 6881 },
+      { ip: '87.98.162.88', port: 6881 },
+      { ip: '82.221.103.244', port: 6881 },
+      { ip: '185.157.221.247', port: 6881 }
+    ];
 
         // 收集的数据
         this.collectedInfoHashes = new Map();
