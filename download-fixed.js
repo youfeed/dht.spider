@@ -1,4 +1,5 @@
-const DHTSpider = require('./spider-fixed.js').DHTSpider;
+const DHTSpiderClass = require('./spider-fixed.js');
+const DHTSpider = DHTSpiderClass.DHTSpider || DHTSpiderClass;
 
 // 配置
 const config = {
@@ -16,44 +17,48 @@ function parseMagnet(magnet) {
   return match[1];
 }
 
-try {
-  const infoHash = parseMagnet(config.magnetUrl);
-  console.log(`🎯 目标 InfoHash: ${infoHash}\n`);
+async function main() {
+  try {
+    const infoHash = parseMagnet(config.magnetUrl);
+    console.log(`🎯 目标 InfoHash: ${infoHash}\n`);
 
-  // 创建爬虫
-  const spider = new DHTSpider({
-    port: 6881,
-    maxNodes: 3000,
-    onInfoHash: (hash) => {
-      // 收集到新 InfoHash
-    }
-  });
+    // 创建爬虫
+    const spider = new DHTSpiderClass({
+      port: 6881,
+      maxNodes: 3000,
+      onInfoHash: (hash) => {
+        // 收集到新 InfoHash
+      }
+    });
 
-  await spider.start();
+    await spider.start();
 
-  console.log('🕷️  开始查询 InfoHash...');
+    console.log('🕷️  开始查询 InfoHash...');
 
-  // 等待路由表建立
-  await new Promise(r => setTimeout(r, 30000));
+    // 等待路由表建立
+    await new Promise(r => setTimeout(r, 30000));
 
-  // 查询指定 InfoHash
-  let peerCount = 0;
-  const checkPeers = setInterval(() => {
-    const count = spider.collectedInfoHashes.size + peerCount;
-    if (count > 0) {
-      console.log(`📥 已收集到数据，开始下载元数据...`);
-      clearInterval(checkPeers);
-      process.exit(0);
-    }
-  }, 5000);
+    // 查询指定 InfoHash
+    let peerCount = 0;
+    const checkPeers = setInterval(() => {
+      const count = spider.collectedInfoHashes.size + peerCount;
+      if (count > 0) {
+        console.log(`📥 已收集到数据，开始下载元数据...`);
+        clearInterval(checkPeers);
+        process.exit(0);
+      }
+    }, 5000);
 
-  // 超时检查
-  setTimeout(() => {
-    console.log('⏰ 查询超时');
+    // 超时检查
+    setTimeout(() => {
+      console.log('⏰ 查询超时');
+      process.exit(1);
+    }, config.queryTimeout);
+
+  } catch (error) {
+    console.error('错误:', error.message);
     process.exit(1);
-  }, config.queryTimeout);
-
-} catch (error) {
-  console.error('错误:', error.message);
-  process.exit(1);
+  }
 }
+
+main();
