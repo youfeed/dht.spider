@@ -10,7 +10,9 @@
   "dependencies": {},
   "scripts": {
     "spider": "node spider.js",
+    "spider-fixed": "node spider-fixed.js",
     "download": "node download.js",
+    "download-fixed": "node download-fixed.js",
     "test": "node test-network.js"
   },
   "keywords": [
