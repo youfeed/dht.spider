@@ -1,0 +1,25 @@
+{
+  "name": "bt-dht-spider",
+  "description": "BitTorrent DHT Spider - 爬取种子 InfoHash 和下载元数据",
+  "author": "DHT Spider",
+  "main": "./spider.js",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">= 14.0.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "spider": "node spider.js",
+    "download": "node download.js",
+    "test": "node test-network.js"
+  },
+  "keywords": [
+    "dht",
+    "bittorrent",
+    "spider",
+    "crawler",
+    "magnet",
+    "torrent"
+  ],
+  "license": "MIT"
+}
