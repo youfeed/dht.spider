@@ -108,7 +108,7 @@ class DHTSpider {
   }
 
   printStats() {
-    const nodes = this.dht._rpc ? (this.dht._rpc.nodes ? this.dht._rpc.nodes.size : 0) : 0
+    const nodes = this.dht._rpc && this.dht._rpc.table ? this.dht._rpc.table.length : 0
     console.log(`\n📊 ${new Date().toLocaleTimeString()}`)
     console.log(`   DHT 节点: ${nodes}`)
     console.log(`   InfoHash: ${this.infoHashes.size}`)
