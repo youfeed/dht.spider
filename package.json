@@ -4,18 +4,21 @@
   "author": "DHT Spider",
   "main": "./spider.js",
   "version": "1.0.0",
+  "type": "module",
   "engines": {
     "node": ">= 14.0.0"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bittorrent-dht": "^11.0.11",
+    "magnet-uri": "^7.0.7"
+  },
   "scripts": {
+    "dev": "node index.js",
     "spider": "node spider.js",
-    "spider-fixed": "node spider-fixed.js",
-    "download": "node download.js",
-    "download-fixed": "node download-fixed.js",
-    "test": "node test-network.js"
+    "download": "node spider.js"
   },
   "keywords": [
+
     "dht",
     "bittorrent",
     "spider",

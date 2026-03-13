@@ -1,4 +1,270 @@
 {
-  "infoHashes": [],
-  "nodes": []
+  "timestamp": "2026-03-12T23:55:25.365Z",
+  "infoHashes": [
+    {
+      "infoHash": "8bc89fa308fb80c471d6296a2d4bedde536ab69d",
+      "firstSeen": 1773359506971,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "7fd982e05638dc1cbe878f2df0ec30bb36ce934c",
+      "firstSeen": 1773359508478,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "f81c113c9b40afb0a3951988f0aeb77fd812dbfd",
+      "firstSeen": 1773359515568,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "5d272c66066232ccf1a88370d0d18f47f599e309",
+      "firstSeen": 1773359523441,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "10488609a17aaf80c2a0741566c67f35f5254e4d",
+      "firstSeen": 1773359535716,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "27ba843193012786b245d8a70a613bda218b793f",
+      "firstSeen": 1773359542547,
+      "peerCount": 2
+    },
+    {
+      "infoHash": "32fa9cec51d86f9a64918b569d68f5ccc2c50a3c",
+      "firstSeen": 1773359562278,
+      "peerCount": 4
+    },
+    {
+      "infoHash": "341f0c99c336832ffd9b7a7fa022caa2418d5a6d",
+      "firstSeen": 1773359566777,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "af498094cffbe8d482a93b3d9cb818be639bb998",
+      "firstSeen": 1773359572337,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "3aac9970cd28200837d8a24f023ca18482cbff40",
+      "firstSeen": 1773359577232,
+      "peerCount": 2
+    },
+    {
+      "infoHash": "e325d6a0aa075c021add519d2f7fcbfe6aa00efd",
+      "firstSeen": 1773359593466,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "82ad8b8dd305bf5a09cf2087f14b0ba0d16692af",
+      "firstSeen": 1773359602531,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "1cd6c4ed13f264de6376847f55b93d2ad33e7ce8",
+      "firstSeen": 1773359605990,
+      "peerCount": 2
+    },
+    {
+      "infoHash": "e3a4b95a5e2e02d2a514977975c46df074187500",
+      "firstSeen": 1773359610560,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "3e609ee360ba936633ec85bdc87dfe9c9dc2906f",
+      "firstSeen": 1773359622865,
+      "peerCount": 2
+    },
+    {
+      "infoHash": "14a6918d85c78065de75331b70d5a1454584944a",
+      "firstSeen": 1773359630396,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "e17fca97da7d0c67b44132e4c36c1ec49c5245ec",
+      "firstSeen": 1773359649731,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "82dacdd85a5e2d1303e9d21cff12ecadac3ef715",
+      "firstSeen": 1773359661924,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "2d59bc5e6b1537c3863cf98a91c2de5436526bb4",
+      "firstSeen": 1773359665171,
+      "peerCount": 1
+    },
+    {
+      "infoHash": "5352a719adf63df94967bb1d69005b61458c649b",
+      "firstSeen": 1773359697286,
+      "peerCount": 2
+    },
+    {
+      "infoHash": "ef5916f5d5116c61ea9c094695349ba5526e8673",
+      "firstSeen": 1773359713519,
+      "peerCount": 1
+    }
+  ],
+  "peers": {
+    "8bc89fa308fb80c471d6296a2d4bedde536ab69d": [
+      {
+        "host": "185.16.215.140",
+        "port": 31880
+      }
+    ],
+    "7fd982e05638dc1cbe878f2df0ec30bb36ce934c": [
+      {
+        "host": "31.200.249.237",
+        "port": 31868
+      }
+    ],
+    "f81c113c9b40afb0a3951988f0aeb77fd812dbfd": [
+      {
+        "host": "31.200.249.233",
+        "port": 31989
+      }
+    ],
+    "5d272c66066232ccf1a88370d0d18f47f599e309": [
+      {
+        "host": "31.200.249.178",
+        "port": 31834
+      }
+    ],
+    "10488609a17aaf80c2a0741566c67f35f5254e4d": [
+      {
+        "host": "185.16.215.140",
+        "port": 31757
+      }
+    ],
+    "27ba843193012786b245d8a70a613bda218b793f": [
+      {
+        "host": "31.200.249.146",
+        "port": 31780
+      },
+      {
+        "host": "31.200.249.146",
+        "port": 31780
+      }
+    ],
+    "32fa9cec51d86f9a64918b569d68f5ccc2c50a3c": [
+      {
+        "host": "31.200.249.227",
+        "port": 31791
+      },
+      {
+        "host": "77.50.203.114",
+        "port": 57148
+      },
+      {
+        "host": "31.200.249.227",
+        "port": 31791
+      },
+      {
+        "host": "31.200.249.227",
+        "port": 31791
+      }
+    ],
+    "341f0c99c336832ffd9b7a7fa022caa2418d5a6d": [
+      {
+        "host": "34.236.152.1",
+        "port": 51941
+      }
+    ],
+    "af498094cffbe8d482a93b3d9cb818be639bb998": [
+      {
+        "host": "31.200.249.237",
+        "port": 31916
+      }
+    ],
+    "3aac9970cd28200837d8a24f023ca18482cbff40": [
+      {
+        "host": "31.200.249.130",
+        "port": 31799
+      },
+      {
+        "host": "31.200.249.130",
+        "port": 31799
+      }
+    ],
+    "e325d6a0aa075c021add519d2f7fcbfe6aa00efd": [
+      {
+        "host": "31.200.249.237",
+        "port": 31968
+      }
+    ],
+    "82ad8b8dd305bf5a09cf2087f14b0ba0d16692af": [
+      {
+        "host": "31.200.249.227",
+        "port": 31871
+      }
+    ],
+    "1cd6c4ed13f264de6376847f55b93d2ad33e7ce8": [
+      {
+        "host": "31.200.249.233",
+        "port": 31769
+      },
+      {
+        "host": "31.200.249.233",
+        "port": 31769
+      }
+    ],
+    "e3a4b95a5e2e02d2a514977975c46df074187500": [
+      {
+        "host": "31.200.249.237",
+        "port": 31968
+      }
+    ],
+    "3e609ee360ba936633ec85bdc87dfe9c9dc2906f": [
+      {
+        "host": "185.16.215.189",
+        "port": 31803
+      },
+      {
+        "host": "185.16.215.189",
+        "port": 31803
+      }
+    ],
+    "14a6918d85c78065de75331b70d5a1454584944a": [
+      {
+        "host": "31.200.249.162",
+        "port": 31761
+      }
+    ],
+    "e17fca97da7d0c67b44132e4c36c1ec49c5245ec": [
+      {
+        "host": "31.200.249.231",
+        "port": 31966
+      }
+    ],
+    "82dacdd85a5e2d1303e9d21cff12ecadac3ef715": [
+      {
+        "host": "31.200.249.227",
+        "port": 31871
+      }
+    ],
+    "2d59bc5e6b1537c3863cf98a91c2de5436526bb4": [
+      {
+        "host": "31.200.249.178",
+        "port": 31786
+      }
+    ],
+    "5352a719adf63df94967bb1d69005b61458c649b": [
+      {
+        "host": "31.200.249.237",
+        "port": 31824
+      },
+      {
+        "host": "31.200.249.237",
+        "port": 31824
+      }
+    ],
+    "ef5916f5d5116c61ea9c094695349ba5526e8673": [
+      {
+        "host": "31.200.249.237",
+        "port": 31980
+      }
+    ]
+  }
 }
